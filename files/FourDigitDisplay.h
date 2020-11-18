@@ -20,6 +20,7 @@ class FourDigitDisplay
   public:
     // CONSTRUCTORS
     FourDigitDisplay(int digitPins [4], int ledPins[7]);
+    FourDigitDisplay(int digitPins [4], int ledPins[7], int DPPin);
     FourDigitDisplay(int digit1Pin, int digit2Pin, int digit3Pin, int digit4Pin, int DPpin,
       int ledAPin, int ledBPin, int ledCPin, int ledDPin, int ledEPin, int ledFPin, int ledGPin);
     FourDigitDisplay(int digit1Pin, int digit2Pin, int digit3Pin, int digit4Pin,
