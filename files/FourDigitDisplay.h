@@ -16,6 +16,7 @@ class FourDigitDisplay
   int _PE;
   int _PF;
   int _PG;
+  int _PDP;
   public:
     // CONSTRUCTORS
     FourDigitDisplay(int digitPins [4], int ledPins[7]);
