@@ -169,5 +169,36 @@ void FourDigitDisplay::writeNum(int upToFourDigitNumber){
 }
 
 void FourDigitDisplay::writeToDigit(int digitToWrite, int numberToWrite){
-  //TODO
+  switch(digitToWrite){
+    case 1:
+      digitalWrite(_D1, LOW);
+      digitalWrite(_D2, HIGH);
+      digitalWrite(_D3, HIGH);
+      digitalWrite(_D4, HIGH);
+      break;
+    case 2:
+      digitalWrite(_D1, HIGH);
+      digitalWrite(_D2, LOW);
+      digitalWrite(_D3, HIGH);
+      digitalWrite(_D4, HIGH);
+      break;
+    case 3:
+      digitalWrite(_D1, HIGH);
+      digitalWrite(_D2, HIGH);
+      digitalWrite(_D3, LOW);
+      digitalWrite(_D4, HIGH);
+      break;
+    case 4:
+      digitalWrite(_D1, HIGH);
+      digitalWrite(_D2, HIGH);
+      digitalWrite(_D3, HIGH);
+      digitalWrite(_D4, LOW);
+      break;
+    default:
+      digitalWrite(_D1, LOW);
+      digitalWrite(_D2, LOW);
+      digitalWrite(_D3, LOW);
+      digitalWrite(_D4, LOW);
+  }
+  displayNum(numberToWrite);
 };
